@@ -29,4 +29,5 @@ HOW TO RUN ?
 
 -->u can see the images on which assumption of emotion is made in the images folder.
    I advise u to train the model in your pc and then use it.
+   To retrain the model with ur photoes just add them according the classification in the data set. I suggest u to take ur images with    the help of running code and copy the optimised images from the images folder where ur realtime photoes with crop,gray and of prefered size u get. only add those gray images to dataset as ur expression and then train model. U can just run hard_update to do so. 
 for any query u can ask.
