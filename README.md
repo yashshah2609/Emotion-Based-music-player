@@ -1,33 +1,41 @@
 Emotion-Based-music-player
-It's music player with chrome as face which has the capablity of detecting emotion from face with the help of machine learning.  
+It's music player with chrome as front-End which has the capablity to detect emotions from the face of user with the help of machine learning algorithm.  
 Credits of this project goes to @yashshah2609 and @PartheshSoni.
 Description :
 
-      In this project we used libraryis of python mainly like OpenCV, EEL, numpy etc.
+      In this project we have used libraries like OpenCV, EEL, numpy etc.
 
-      OpenCV : We have used this for capturing photes from webcam as well as processing on it. make implemantation of fisherface 			 methodology of opencv.
+      OpenCV : for capturing images from webcam as well as for processing purpose. made implemantation of fisherface 			 methodology of opencv for classification.
 
-      FisherFace : use for train the madel, create it and store it in a .xml model file. While using player it uses for prediction 				 for emotion.
+      FisherFace : to train the madel and store it in a model-file(.xml). While using player it uses for prediction 				 for emotion.
       
-      --> Because of songs classification categories of # 4	we have make corr 4 categories of emotions.
+      **--> We have used haarcascade trained model provided by OpenCV for face segmentation from the captured image.
+
+      --> Because the mapping of the genere of songs to the emotion we had decided to put only 4 emotions into consideration for model.
       	  1>angry
       	  2>happy
       	  3>sad
       	  4>neutral
 
-      **--> We have also used haarcascade trained model provided by OpenCV for face detection in the captured image.
+      EEl library: It proveds connectivity of javascript with python. Like we can say as html-JS as frontend and python as backend. The reason for chosing this was the frontend of html with css give us too many facilities for our project. in the HTML-CSS based Music player There are mostly all preferable options are given with a option based on mood which will ignite python script to work.
 
-      EEl : It's a way to connect javascript with python in our project. The reason for chosing this was the frontend of html with  	  css give us too much facilities for our project. In javascript we have given all the posssible ways for playing the 		  music.
+The Flow goes like :: run the capture.py file it will trigger html file which will show you CSS-HTML based music player(webpage) -> Want to play any music just click on play-button shown on song or have plus sign to add it to queue.
+->another option of based on emotion will be shown on right uper side, select it. JS will trigger python function.
+->camera will start and record your image in backend and go for 10 successful image which contains any face.
+->generate emotion prediction on those images and get aggregate result of those 10 result and choose appropriate emotion and forward it to JS script.
+->JS chose random song of that genere to play.
+->Whenever song will go to end It will repeat the same process in backend such that user can't not know that.
 
 HOW TO RUN ?
 
---> download whole project in single folder as uploaded. If U r familiar with jss by understanding the js model u can easly insert # 	 of songs bcz we have make the whole javascript code dynamicaly such that by just inserting data in the correct dictionary in js 	 u can make no. of songs to be added.
+--> download whole project in single folder as uploaded. If U r familiar with jss by understanding the js model u can easly insert # 	 of songs bcz we have make the whole javascript code dynamically such that, just by inserting data inyo the correct dictionary in js will make the project to show and run your own choosed musics.
 
 --> make sure u have installed openCV, opencv contrib, eel, numpy and all it's dependancies.
-
+library of eel : https://drive.google.com/open?id=1LphmYEBwa-SXbTFXuxIKBAt4iQ1Z2JA8
 *--> Just run capture.py file.
 
 -->u can see the images on which assumption of emotion is made in the images folder.
-   I advise u to train the model in your pc and then use it.
+   I advise u to train the model in your pc and then use it(I case you are using any new or updated dataset).
    
--->To retrain the model with ur photoes just add them according the classification in the data set. I suggest u to take ur images with      the help of running code and copy the optimised images from the images folder where ur realtime photoes with crop,gray and of            prefered size u get. only add those gray images to dataset as ur expression and then train model. U can just run hard_update to do      so. for any query u can ask.
+-->for any query u can mail on shahyash2609@gmail.com.
+Thank You.
