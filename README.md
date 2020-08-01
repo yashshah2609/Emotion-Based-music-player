@@ -39,3 +39,4 @@ library of eel : https://drive.google.com/open?id=1LphmYEBwa-SXbTFXuxIKBAt4iQ1Z2
    
 -->for any query u can mail on shahyash2609@gmail.com.
 Thank You.
+[![Run on Repl.it](https://repl.it/badge/github/yashshah2609/Emotion-Based-music-player)](https://repl.it/github/yashshah2609/Emotion-Based-music-player)
